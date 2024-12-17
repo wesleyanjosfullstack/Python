@@ -1,4 +1,3 @@
-v = float(input('Digite um valor: '))
-print('Dinheiro: R${:.2f}'.format(v))
-d = v / 3.27
-print('Voçê pode ter U${:.2f}'.format(d))
+r = float(input('Quanto dinheiro voçê tem na carteira? R$'))
+d = r / 3.27
+print('Com R${:.2f}, voçê pode ter em dolares: U${:.2f}\n'.format(r, d))
