@@ -1,4 +1,7 @@
-from math import sin, cos, tan 
+from math import sin, cos, tan, radians
 
 an = int(input('Digite um ângulo: '))
-print('Seno {}, cosseno {} e tangente {}'.format(sin(an), cos(an), tan(an)))
+se = sin(radians(an))
+co = cos(radians(an))
+ta = tan(radians(an))
+print('Seno {:.2f}, cosseno {:.2f} e tangente {:.2f}'.format(se, co, ta))
