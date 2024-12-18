@@ -1,7 +1,9 @@
-from random import random
-a1 = str(input('Digite o nome do primeiro aluno: '))
-a2 = str(input('Digite o nome do segundo aluno: '))
-a3 = str(input('Digite o nome do terceiro aluno: '))
-a4 = str(input('Digite o nome do quarto aluno: '))
-r = random(a1, a2, a3, a4)
-print('Aluno escolhido: {}'.format(r))
+from random import choice
+
+a1 = str(input('Primeiro aluno: '))
+a2 = str(input('Segundo aluno: '))
+a3 = str(input('Terceiro aluno: '))
+a4 = str(input('Quarto aluno: '))
+a = [a1, a2, a3, a4]
+choice = choice(a)
+print('Aluno escolhido: {}'.format(choice))
