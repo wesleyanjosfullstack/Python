@@ -1,12 +1,22 @@
-n1 = int(input('Digite o primeiro número: '))
-n2 = int(input('Digite o segundo número: '))
-n3 = int(input('Digite o terceiro número: '))
-print('\nAnálisando os seguite valores: {}, {}, {}...\n'.format(n1, n2, n3))
+a = int(input('Digite o primeiro número: '))
+b = int(input('Digite o segundo número: '))
+c = int(input('Digite o terceiro número: '))
+print('\nAnálisando os seguite valores: {}, {}, {}...\n'.format(a, b, c))
 
-if n1 > n2 and n1 > n3:
-    print('O maior é {}\n'.format(n1))
-else: 
-    if n2 > n1 and n2 > n3:
-        print('O maior é {}\n'.format(n2))
-    else:
-        print('O maior é {}'.format(n3))
+me = a
+
+if  b < a and b < c:
+    me = b
+if  c < a and c < b:
+    me = c
+
+print('O menor valor digitado foi: {}\n'.format(me))
+
+ma = a
+
+if b > a and b > c:
+    ma = b
+if c > a and c > b:
+    ma = c
+
+print('O maior valor digitado foi: {}\n'.format(ma))
